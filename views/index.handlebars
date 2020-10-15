@@ -1,0 +1,47 @@
+<main class="container my-5">
+    <div class="row">
+        <div class="col-4 justify-content-center">
+            <div class="d-flex p2 mb-3 justify-content-center">
+                <h4>Menu</h4>
+            </div>
+            <div class="d-flex justify-content-center">
+                <ul>
+                    {{#each burgers}}
+                    {{#unless devoured}}
+                    {{> burgers/burger-block devoured=true}}
+                    <button class="devour" data-id={{id}}>Devour</button>
+                    {{/unless}}
+                    {{/each}}
+                </ul>
+            </div>
+        </div>
+
+        <div class="col-4 justify-content-center">
+            <div class="d-flex my-3 p2 justify-content-center burgerimage">
+                <img src="https://bit.ly/3nJvqLb" class="img-fluid" alt="Burger Image">
+            </div>
+            <div class="d-flex p2 justify-content-center">
+                <form class="create-burger">
+                    <label for="burgername">Create your own burger</label><br>
+                    <input type="text" id="burgername" name="burgername">
+                    <input type="submit" class="mr-2" value="Build It!">
+                </form>
+            </div>
+        </div>
+
+        <div class="col-4">
+            <div class="d-flex p2 mb-3 justify-content-center">
+                <h4>Past Burgers</h4>
+            </div>
+            <div class="d-flex justify-content-center">
+                <ul>
+                    {{#each burgers}}
+                    {{#if devoured}}
+                    {{> burgers/burger-block devoured=false}}
+                    {{/if}}
+                    {{/each}}
+                </ul>
+            </div>
+        </div>
+    </div>
+</main>

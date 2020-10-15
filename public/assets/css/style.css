@@ -1,0 +1,24 @@
+body {
+  background-image: url(https://i.pinimg.com/originals/6b/e1/84/6be1847b56e3832a614699142d1e09d8.jpg);
+  background-size: cover;
+}
+
+h4 {
+  color: olive;
+}
+
+li {
+  color: whitesmoke;
+}
+
+img {
+  border-style: solid;
+  border-color: olive;
+  border-width: 5px;
+  border-radius: 2px;
+}
+
+.buildit,
+label {
+  color: whitesmoke;
+}
