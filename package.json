@@ -1,5 +1,5 @@
 {
-  "name": "Eat-da-Burger",
+  "name": "Burger-Machine",
   "version": "1.0.0",
   "description": "",
   "main": "server.js",
@@ -9,15 +9,15 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/AlvinZC4/Eat-da-Burger.git"
+    "url": "git+https://github.com/garshtoshteles/12homework.git"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/AlvinZC4/Eat-da-Burger/issues"
+    "url": "https://github.com/garshtoshteles/12homework/issues"
   },
-  "homepage": "https://github.com/AlvinZC4/Eat-da-Burger#readme",
+  "homepage": "https://github.com/garshtoshteles/12homework#readme",
   "dependencies": {
     "express": "^4.17.1",
     "express-handlebars": "^5.1.0",
